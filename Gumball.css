@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h1{
+    font-size: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.heading p{
+    font-size: 1.1rem;
+    font-style: italic;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.spacing {
+    padding: 85px 20px;
+}
+
+/* header */
+header{
+    background-color: #43c4da;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    width: 100%
+}
+
+header ul{
+    margin: 0;
+}
+
+.nav__item{
+    z-index: 9999;
+}
+
+header > nav > ul > li{
+    list-style: none;
+}
+
+header > nav > ul > li:hover{
+    background-color: #f1d2b6;
+}
+header > nav > ul > li:hover a{
+    color: black;
+}
+
+header > nav > ul > li:hover i{
+    color: black;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav > ul a{
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+header nav > ul a:hover{
+    background-color: #f1d2b6;
+    color: black
+}
+
+.header__search > i{
+    color: white;
+    font-size: 1.1rem;
+    padding: 14px 24px
+}
+.header__search > i:hover{
+    background-color: #fd7f2a;
+}
+.nav__more{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.nav__more .nav__item{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    opacity: 0;
+}
+
+.nav__more:hover .nav__item{
+    opacity: 1;
+}
+
+.nav__more > a{
+    padding-right: 5px;
+}
+
+.nav__more > i{
+    color: white;
+    padding-right: 24px;
+}
+
+.nav__more .nav__item, a{
+    color: black;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px 5px;
+}
+
+/*Carousel*/
+.carousel .carousel-item{
+    height: 700px;
+}
+
+
+/*Plot*/
+.Plot {
+    position: relative;
+    z-index: 1;
+    background-color: rgb(162, 206, 255);
+}
+
+.Plot::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("1401176.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.2; 
+    z-index: -1;
+}
+
+.Plot__Content{
+    max-width: 800px;
+    margin:0 auto
+}
+
+.Plot__Content > p{
+    text-align: justify;
+    line-height: 1.2rem;
+    word-spacing: 1px;
+}
+
+.Plot__Characters {
+    max-width: 800px;   /* align với đoạn văn */
+    margin: 40px auto;  /* căn giữa giống .Plot__Content */
+    display: flex;
+    justify-content: space-between; /* gần nhau hơn */
+    gap: 20px;           /* khoảng cách giữa các hình */
+}
+
+.Plot__Item{
+    width: 160px;
+    text-align: center;
+}
+
+.Plot__Item h5{
+    font-size: 1rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.Plot__Item img{
+    width: 100%;
+    height: 180px;
+}
